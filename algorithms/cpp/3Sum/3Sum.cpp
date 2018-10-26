@@ -57,6 +57,7 @@ vector<vector<int> > threeSum(vector<int> &num) {
     for (int i=0; i<n-2; i++) {
         //skip the duplication
         if (i>0 && num[i-1]==num[i]) continue;
+        if (num[i]>0) break;
         int a = num[i];
         int low = i+1;
         int high = n-1;
